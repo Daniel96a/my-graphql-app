@@ -1,0 +1,16 @@
+type User {
+    id: ID!
+    ssn: String!
+    firstname: String!
+    lastname: String!
+}
+
+type Query {
+    users: [User]!
+    userById(id: Int): User
+    userBySsn(ssn: String): User
+}
+
+# type Mutation {
+#     addUser(ssn: number!, firstName: String!, lastName: String!) : USER!
+# }
